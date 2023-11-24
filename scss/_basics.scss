@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Space Mono', monospace;
+}
+.container{
+  max-width: 1135px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include tablet(){
+    max-width: 687px;
+  }
+  @include mobile(){
+    max-width: 312px;
+  }
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}

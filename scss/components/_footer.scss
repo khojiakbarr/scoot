@@ -1,0 +1,81 @@
+.footer {
+  background-image: url(/images/bg__footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 102px 0 102px;
+    @include tablet() {
+      text-align: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+    @include mobile() {
+      text-align: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .stores img{
+      width: 130px;
+      height: 40px;
+    }
+
+    h3 {
+      max-width: 415px;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.143px;
+
+      @include mobile() {
+        font-size: 32px;
+      }
+    }
+  }
+}
+.backround {
+  background-color: #333a44;
+  padding: 35px 0 35px;
+}
+.bottom__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile(){
+    flex-direction: column;
+  }
+  .footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile(){
+      flex-direction: column;
+    }
+    gap: 58px;
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      @include mobile(){
+        flex-direction: column;
+      }
+      &__info {
+        color: #939caa;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+      }
+    }
+  }
+  .links__social{
+    @include mobile(){
+      margin-top: 85px;
+    }
+  }
+}
